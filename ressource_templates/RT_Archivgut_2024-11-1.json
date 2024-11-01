@@ -1,0 +1,586 @@
+{
+    "o:label": "Archivgut",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": "Datengeber*in",
+            "o:alternate_comment": null,
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "customvocab:3",
+                    "label": "Datengeber*innen"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "source",
+            "label": "Source"
+        },
+        {
+            "o:alternate_label": "ID des Datensatzes",
+            "o:alternate_comment": null,
+            "o:is_required": true,
+            "o:is_private": true,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "identifier",
+            "label": "Identifier"
+        },
+        {
+            "o:alternate_label": "Objekttyp",
+            "o:alternate_comment": "Objektart, z.B. Archivalie, Akte, Brief",
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "valuesuggestall:dc:types",
+                    "label": "Dublin Core: Types"
+                },
+                {
+                    "name": "customvocab:1",
+                    "label": "Medientyp"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "type",
+            "label": "Type"
+        },
+        {
+            "o:alternate_label": "Signatur",
+            "o:alternate_comment": "Signatur oder Inventarnummer der Verzeichniseinheit",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "numeric:integer",
+                    "label": "Integer"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "identifier",
+            "label": "identifier"
+        },
+        {
+            "o:alternate_label": "Bestandstitel oder Bandtitel",
+            "o:alternate_comment": "Bestandstitel oder Bandtitel",
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "title",
+            "label": "Title"
+        },
+        {
+            "o:alternate_label": "Ehemaliger Titel",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "alternative",
+            "label": "Alternative Title"
+        },
+        {
+            "o:alternate_label": "\u00dcbergeordnete Verzeichniseinheit",
+            "o:alternate_comment": "\u00dcbergeordnete Verzeichniseinheit: Eine verwandte Ressource, in der die beschriebene Ressource physisch oder logisch enthalten ist.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                },
+                {
+                    "name": "resource:itemset",
+                    "label": "Item Set"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "isPartOf",
+            "label": "Is Part Of"
+        },
+        {
+            "o:alternate_label": "Untergeordnete Verzeichniseinheit(en)",
+            "o:alternate_comment": "Untergeordnete Verzeichniseinheit: Eine verwandte Ressource, die entweder physisch oder logisch in der beschriebenen Ressource enthalten ist.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "hasPart",
+            "label": "Has Part"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Gesamtanzahl der zum Bestand geh\u00f6rigen B\u00e4nde",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "numeric:integer",
+                    "label": "Integer"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "numVolumes",
+            "label": "number of volumes"
+        },
+        {
+            "o:alternate_label": "Bandnummer",
+            "o:alternate_comment": "Bandnummer, z.B. 1 oder Bd. 1 oder Band 2 von 5.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "numeric:integer",
+                    "label": "Integer"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "volume",
+            "label": "volume"
+        },
+        {
+            "o:alternate_label": "Umfang des Bestands",
+            "o:alternate_comment": "Beschreibung des Umfangs des Bestands, z.B. \"46 Archivkartons\" oder auch der laufenden Regalmeter",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "extent",
+            "label": "Extent"
+        },
+        {
+            "o:alternate_label": "Provenienz",
+            "o:alternate_comment": "Woher stammt der Bestand? Quelle des Bestands, z.B. Nachlassgeber*in",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "provenance",
+            "label": "Provenance"
+        },
+        {
+            "o:alternate_label": "Urheber*in",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "creator",
+            "label": "Creator"
+        },
+        {
+            "o:alternate_label": "Mitwirkende",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "contributor",
+            "label": "Contributor"
+        },
+        {
+            "o:alternate_label": "Enth\u00e4ltvermerk",
+            "o:alternate_comment": "Kurze Beschreibung oder Aufz\u00e4hlung dessen, was der Bestand bzw. der Band oder die Akte enth\u00e4lt oder behandelt. Beispiel: \"Briefe an x und y von 2002-2020\".",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "description",
+            "label": "Description"
+        },
+        {
+            "o:alternate_label": "Bearbeiter*in des Findmittels",
+            "o:alternate_comment": "Bearbeiter*in des Findmittels",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "editor",
+            "label": "editor"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "\u00dcbersicht \u00fcber enthaltende B\u00e4nde",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "tableOfContents",
+            "label": "Table Of Contents"
+        },
+        {
+            "o:alternate_label": "Sperrvermerk",
+            "o:alternate_comment": "Gibt es Einschr\u00e4nkungen bzgl. der Nutzung?",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "accessRights",
+            "label": "Access Rights"
+        },
+        {
+            "o:alternate_label": "Standortangabe",
+            "o:alternate_comment": "Standortangabe in Institution",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "numeric:integer",
+                    "label": "Integer"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "locator",
+            "label": "locator"
+        },
+        {
+            "o:alternate_label": "Laufzeit",
+            "o:alternate_comment": "Laufzeit bzw. Datierung, z.B. 1990-2004",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "numeric:integer",
+                    "label": "Integer"
+                },
+                {
+                    "name": "numeric:interval",
+                    "label": "Interval"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "date",
+            "label": "Date"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": "Sprache der Archivmaterialie(n)",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "customvocab:2",
+                    "label": "Sprachen"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "language",
+            "label": "Language"
+        },
+        {
+            "o:alternate_label": "Ortsangabe",
+            "o:alternate_comment": "Ortsangaben mit Bezug zur Archivalie bzw. Verzeichniseinheit",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "valuesuggest:geonames:geonames",
+                    "label": "Geonames: The GeoNames geographical database"
+                },
+                {
+                    "name": "valuesuggestall:geonames:features",
+                    "label": "Geonames: GeoNames features"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "spatial",
+            "label": "Spatial Coverage"
+        },
+        {
+            "o:alternate_label": "Verwandte Verzeichniseinheiten oder Verweise",
+            "o:alternate_comment": "Verzeichniseinheiten, Objekte oder Personen, die mit dieser in Bezug stehen. Institutionsintern bzw. innerhalb einer Sammlung.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                },
+                {
+                    "name": "resource:itemset",
+                    "label": "Item Set"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "relation",
+            "label": "Relation"
+        },
+        {
+            "o:alternate_label": "Schlagwort",
+            "o:alternate_comment": "inhaltliche bzw. thematische Schlagworte",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "valuesuggest:gnd:gnd",
+                    "label": "GND: Die Gemeinsame Normdatei"
+                },
+                {
+                    "name": "valuesuggest:homosaurus:homosaurus",
+                    "label": "Homosaurus: an international LGBTQ linked data vocabulary"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "subject",
+            "label": "Subject"
+        },
+        {
+            "o:alternate_label": "Verweise",
+            "o:alternate_comment": "Eine verwandte Ressource (au\u00dferhalb der Sammlung), auf die die beschriebene Ressource verweist, die sie zitiert oder auf die sie anderweitig verweist.",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                },
+                {
+                    "name": "resource:itemset",
+                    "label": "Item Set"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "references",
+            "label": "References"
+        },
+        {
+            "o:alternate_label": "Rechteangabe Metadaten",
+            "o:alternate_comment": null,
+            "o:is_required": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "customvocab:4",
+                    "label": "CC-Lizenzen"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "license",
+            "label": "License"
+        },
+        {
+            "o:alternate_label": "Datum der Datenlieferung",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": true,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "numeric:timestamp",
+                    "label": "Timestamp"
+                },
+                {
+                    "name": "numeric:integer",
+                    "label": "Integer"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "dateSubmitted",
+            "label": "Date Submitted"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "PhysicalObject",
+        "label": "Physical Object"
+    }
+}
