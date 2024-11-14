@@ -68,6 +68,10 @@
             "o:default_lang": null,
             "data_types": [
                 {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
                     "name": "numeric:timestamp",
                     "label": "Timestamp"
                 }
@@ -174,7 +178,7 @@
             "o:alternate_label": null,
             "o:alternate_comment": "Zustimmung gegeben: \"Hiermit geben wir die Zustimmung, dass der \u00fcbergebene Datensatz im Rahmen des Prototype-Projekts gespeichert und verarbeitet und die gelieferten Daten in der Rechercheplattform auf der Webseite des Dachverbands ver\u00f6ffentlicht werden d\u00fcrfen. \"",
             "o:is_required": false,
-            "o:is_private": false,
+            "o:is_private": true,
             "o:default_lang": null,
             "data_types": [
                 {
