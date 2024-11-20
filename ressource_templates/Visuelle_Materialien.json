@@ -367,7 +367,7 @@
             "label": "Medium"
         },
         {
-            "o:alternate_label": null,
+            "o:alternate_label": "Digitale Repr\u00e4sentation",
             "o:alternate_comment": "Link zur Website des*\/der Datengeber*in (falls vorhanden)",
             "o:is_required": false,
             "o:is_private": false,
