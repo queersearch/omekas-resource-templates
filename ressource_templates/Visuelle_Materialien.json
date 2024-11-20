@@ -317,6 +317,27 @@
             "label": "number of volumes"
         },
         {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "customvocab:2",
+                    "label": "Sprachen"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "language",
+            "label": "Language"
+        },
+        {
             "o:alternate_label": "Schlagwort(e)",
             "o:alternate_comment": "inhaltliche bzw. thematische Schlagworte",
             "o:is_required": false,
