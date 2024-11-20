@@ -498,10 +498,10 @@
         }
     ],
     "o:resource_class": {
-        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
-        "vocabulary_label": "Dublin Core",
-        "local_name": "PhysicalMedium",
-        "label": "Physical Medium"
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/dcmitype\/",
+        "vocabulary_label": "Dublin Core Type",
+        "local_name": "PhysicalObject",
+        "label": "Physical Object"
     },
     "o:title_property": {
         "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
