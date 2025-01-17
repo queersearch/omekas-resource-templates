@@ -2,6 +2,23 @@
     "o:label": "Visuelle Materialien",
     "o:resource_template_property": [
         {
+            "o:alternate_label": "Digitale Repr\u00e4sentation",
+            "o:alternate_comment": "Link zur Website des*\/der Datengeber*in (falls vorhanden)",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "uri",
+            "label": "uri"
+        },
+        {
             "o:alternate_label": "Objekttyp",
             "o:alternate_comment": "Objekttyp",
             "o:is_required": true,
@@ -124,6 +141,27 @@
             "label": "Description"
         },
         {
+            "o:alternate_label": "Abgebildete Person(en)",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/xmlns.com\/foaf\/0.1\/",
+            "vocabulary_label": "Friend of a Friend",
+            "local_name": "depiction",
+            "label": "depiction"
+        },
+        {
             "o:alternate_label": "Provenienz",
             "o:alternate_comment": "Woher stammt das Objekt? z. B. Nachlassgeber*in oder Spender*in",
             "o:is_required": false,
@@ -162,29 +200,25 @@
             "label": "Rights Holder"
         },
         {
-            "o:alternate_label": "Ort",
-            "o:alternate_comment": "R\u00e4umlicher Bezug, z.B. Entstehungsort",
+            "o:alternate_label": "Aufnahmedatum",
+            "o:alternate_comment": "Bezug: Fotografie",
             "o:is_required": false,
             "o:is_private": false,
             "o:default_lang": null,
             "data_types": [
                 {
-                    "name": "literal",
-                    "label": "Text"
+                    "name": "numeric:timestamp",
+                    "label": "Timestamp"
                 },
                 {
-                    "name": "uri",
-                    "label": "URI"
-                },
-                {
-                    "name": "valuesuggest:geonames:geonames",
-                    "label": "Geonames: The GeoNames geographical database"
+                    "name": "numeric:interval",
+                    "label": "Interval"
                 }
             ],
             "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
             "vocabulary_label": "Dublin Core",
-            "local_name": "spatial",
-            "label": "Spatial Coverage"
+            "local_name": "created",
+            "label": "Date Created"
         },
         {
             "o:alternate_label": "Datierung",
@@ -212,25 +246,29 @@
             "label": "Date"
         },
         {
-            "o:alternate_label": "Aufnahmedatum",
-            "o:alternate_comment": "Bezug: Fotografie",
+            "o:alternate_label": "Ort",
+            "o:alternate_comment": "R\u00e4umlicher Bezug, z.B. Entstehungsort",
             "o:is_required": false,
             "o:is_private": false,
             "o:default_lang": null,
             "data_types": [
                 {
-                    "name": "numeric:timestamp",
-                    "label": "Timestamp"
+                    "name": "literal",
+                    "label": "Text"
                 },
                 {
-                    "name": "numeric:interval",
-                    "label": "Interval"
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "valuesuggest:geonames:geonames",
+                    "label": "Geonames: The GeoNames geographical database"
                 }
             ],
             "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
             "vocabulary_label": "Dublin Core",
-            "local_name": "created",
-            "label": "Date Created"
+            "local_name": "spatial",
+            "label": "Spatial Coverage"
         },
         {
             "o:alternate_label": "Gr\u00f6\u00dfe bzw. Ma\u00dfangaben",
@@ -292,35 +330,6 @@
             "label": "Language"
         },
         {
-            "o:alternate_label": "Verwandte Objekte bzw. Ressourcen",
-            "o:alternate_comment": null,
-            "o:is_required": false,
-            "o:is_private": false,
-            "o:default_lang": null,
-            "data_types": [
-                {
-                    "name": "literal",
-                    "label": "Text"
-                },
-                {
-                    "name": "uri",
-                    "label": "URI"
-                },
-                {
-                    "name": "resource:item",
-                    "label": "Item"
-                },
-                {
-                    "name": "valuesuggest:omeka:property",
-                    "label": "Omeka: Property"
-                }
-            ],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
-            "vocabulary_label": "Dublin Core",
-            "local_name": "relation",
-            "label": "Relation"
-        },
-        {
             "o:alternate_label": "Material",
             "o:alternate_comment": null,
             "o:is_required": false,
@@ -361,48 +370,6 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "format",
             "label": "Format"
-        },
-        {
-            "o:alternate_label": "Digitale Repr\u00e4sentation",
-            "o:alternate_comment": "Link zur Website des*\/der Datengeber*in (falls vorhanden)",
-            "o:is_required": false,
-            "o:is_private": false,
-            "o:default_lang": null,
-            "data_types": [
-                {
-                    "name": "uri",
-                    "label": "URI"
-                }
-            ],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
-            "vocabulary_label": "Bibliographic Ontology",
-            "local_name": "uri",
-            "label": "uri"
-        },
-        {
-            "o:alternate_label": "Schlagwort(e)",
-            "o:alternate_comment": "inhaltliche bzw. thematische Schlagworte",
-            "o:is_required": false,
-            "o:is_private": false,
-            "o:default_lang": null,
-            "data_types": [
-                {
-                    "name": "literal",
-                    "label": "Text"
-                },
-                {
-                    "name": "uri",
-                    "label": "URI"
-                },
-                {
-                    "name": "valuesuggest:gnd:gnd",
-                    "label": "GND: Die Gemeinsame Normdatei"
-                }
-            ],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
-            "vocabulary_label": "Dublin Core",
-            "local_name": "subject",
-            "label": "Subject"
         },
         {
             "o:alternate_label": "Signatur oder Inventarnummer",
@@ -451,6 +418,60 @@
             "label": "Source"
         },
         {
+            "o:alternate_label": "Verwandte Objekte bzw. Ressourcen",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "resource:item",
+                    "label": "Item"
+                },
+                {
+                    "name": "valuesuggest:omeka:property",
+                    "label": "Omeka: Property"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "relation",
+            "label": "Relation"
+        },
+        {
+            "o:alternate_label": "Schlagwort(e)",
+            "o:alternate_comment": "inhaltliche bzw. thematische Schlagworte",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "valuesuggest:gnd:gnd",
+                    "label": "GND: Die Gemeinsame Normdatei"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "subject",
+            "label": "Subject"
+        },
+        {
             "o:alternate_label": "Nutzungsrechte Metadaten",
             "o:alternate_comment": null,
             "o:is_required": false,
@@ -497,7 +518,7 @@
             "label": "Date Submitted"
         },
         {
-            "o:alternate_label": null,
+            "o:alternate_label": "Gef\u00f6rdert durch",
             "o:alternate_comment": null,
             "o:is_required": false,
             "o:is_private": false,
@@ -512,27 +533,6 @@
             "vocabulary_label": "Friend of a Friend",
             "local_name": "fundedBy",
             "label": "funded by"
-        },
-        {
-            "o:alternate_label": "abgebildete Person",
-            "o:alternate_comment": null,
-            "o:is_required": false,
-            "o:is_private": false,
-            "o:default_lang": null,
-            "data_types": [
-                {
-                    "name": "literal",
-                    "label": "Text"
-                },
-                {
-                    "name": "uri",
-                    "label": "URI"
-                }
-            ],
-            "vocabulary_namespace_uri": "http:\/\/xmlns.com\/foaf\/0.1\/",
-            "vocabulary_label": "Friend of a Friend",
-            "local_name": "depiction",
-            "label": "depiction"
         }
     ],
     "o:resource_class": {
