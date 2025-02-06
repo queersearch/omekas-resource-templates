@@ -19,6 +19,10 @@
                 {
                     "name": "customvocab:1",
                     "label": "Objekttyp"
+                },
+                {
+                    "name": "customvocab:5",
+                    "label": "Objekttyp (einzelne Begriffe)"
                 }
             ],
             "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
