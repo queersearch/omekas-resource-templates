@@ -82,6 +82,31 @@
             "label": "Alternative Title"
         },
         {
+            "o:alternate_label": "Urheber*in",
+            "o:alternate_comment": "Bei Briefen z.\u00a0B. Briefeschreiber*innen, bei Konvolut aus vielen verschiedenen Objekten (z.\u00a0B. Sammlung von Zeitungsartikeln) leer",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "valuesuggest:gnd:gnd",
+                    "label": "GND: Die Gemeinsame Normdatei"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "creator",
+            "label": "Creator"
+        },
+        {
             "o:alternate_label": "\u00dcbergeordnete Verzeichniseinheit",
             "o:alternate_comment": "\u00dcbergeordnete Verzeichniseinheit: Eine verwandte Ressource, in der die beschriebene Ressource physisch oder logisch enthalten ist.",
             "o:is_required": false,
@@ -151,31 +176,6 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "provenance",
             "label": "Provenance"
-        },
-        {
-            "o:alternate_label": "Urheber*in",
-            "o:alternate_comment": "Bei Briefen z.\u00a0B. Briefeschreiber*innen, bei Konvolut aus vielen verschiedenen Objekten (z.\u00a0B. Sammlung von Zeitungsartikeln) leer",
-            "o:is_required": false,
-            "o:is_private": false,
-            "o:default_lang": null,
-            "data_types": [
-                {
-                    "name": "literal",
-                    "label": "Text"
-                },
-                {
-                    "name": "uri",
-                    "label": "URI"
-                },
-                {
-                    "name": "valuesuggest:gnd:gnd",
-                    "label": "GND: Die Gemeinsame Normdatei"
-                }
-            ],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
-            "vocabulary_label": "Dublin Core",
-            "local_name": "creator",
-            "label": "Creator"
         },
         {
             "o:alternate_label": "Mitwirkende*r",
