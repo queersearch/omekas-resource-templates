@@ -65,23 +65,6 @@
             "label": "Description"
         },
         {
-            "o:alternate_label": "Digitale Repr\u00e4sentation",
-            "o:alternate_comment": "Link zur Website des*\/der Datengeber*in (falls vorhanden)",
-            "o:is_required": false,
-            "o:is_private": false,
-            "o:default_lang": null,
-            "data_types": [
-                {
-                    "name": "uri",
-                    "label": "URI"
-                }
-            ],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
-            "vocabulary_label": "Bibliographic Ontology",
-            "local_name": "uri",
-            "label": "uri"
-        },
-        {
             "o:alternate_label": null,
             "o:alternate_comment": null,
             "o:is_required": false,
@@ -511,6 +494,23 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "subject",
             "label": "Subject"
+        },
+        {
+            "o:alternate_label": "Digitale Repr\u00e4sentation",
+            "o:alternate_comment": "Link zur Website des*\/der Datengeber*in (falls vorhanden)",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "uri",
+            "label": "uri"
         },
         {
             "o:alternate_label": "Rechteinhaber*in",
