@@ -93,6 +93,10 @@
                     "label": "URI"
                 },
                 {
+                    "name": "resource:item",
+                    "label": "Item"
+                },
+                {
                     "name": "valuesuggest:gnd:gnd",
                     "label": "GND: Die Gemeinsame Normdatei"
                 }
