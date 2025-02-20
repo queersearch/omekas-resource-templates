@@ -93,6 +93,10 @@
                     "label": "Text"
                 },
                 {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
                     "name": "resource:item",
                     "label": "Item"
                 }
@@ -552,8 +556,8 @@
                     "label": "Item"
                 },
                 {
-                    "name": "valuesuggest:omeka:property",
-                    "label": "Omeka: Property"
+                    "name": "customvocab:3",
+                    "label": "Datengeber*innen"
                 }
             ],
             "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
