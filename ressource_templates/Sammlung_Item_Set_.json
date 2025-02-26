@@ -65,10 +65,27 @@
             "label": "identifier"
         },
         {
-            "o:alternate_label": null,
+            "o:alternate_label": "Beschreibung",
             "o:alternate_comment": null,
             "o:is_required": false,
             "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "shortDescription",
+            "label": "shortDescription"
+        },
+        {
+            "o:alternate_label": "Kurzbeschreibung",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": true,
             "o:default_lang": null,
             "data_types": [
                 {
@@ -82,12 +99,29 @@
             "label": "Description"
         },
         {
-            "o:alternate_label": "Laufzeit",
+            "o:alternate_label": "Mitwirkende",
             "o:alternate_comment": null,
             "o:is_required": false,
             "o:is_private": false,
             "o:default_lang": null,
             "data_types": [],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "contributor",
+            "label": "Contributor"
+        },
+        {
+            "o:alternate_label": "Laufzeit",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                }
+            ],
             "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
             "vocabulary_label": "Dublin Core",
             "local_name": "date",
@@ -118,7 +152,31 @@
             "label": "number of volumes"
         },
         {
-            "o:alternate_label": null,
+            "o:alternate_label": "Link",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "uri",
+            "label": "uri"
+        },
+        {
+            "o:alternate_label": "Rechteinhaber*in",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "rightsHolder",
+            "label": "Rights Holder"
+        },
+        {
+            "o:alternate_label": "Nutzungsrechte Digitalisate",
             "o:alternate_comment": null,
             "o:is_required": false,
             "o:is_private": false,
@@ -171,23 +229,6 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "language",
             "label": "Language"
-        },
-        {
-            "o:alternate_label": "Kurzbeschreibung",
-            "o:alternate_comment": null,
-            "o:is_required": false,
-            "o:is_private": false,
-            "o:default_lang": null,
-            "data_types": [
-                {
-                    "name": "literal",
-                    "label": "Text"
-                }
-            ],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
-            "vocabulary_label": "Bibliographic Ontology",
-            "local_name": "shortDescription",
-            "label": "shortDescription"
         }
     ],
     "o:resource_class": {
