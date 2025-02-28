@@ -9,10 +9,6 @@
             "o:default_lang": null,
             "data_types": [
                 {
-                    "name": "customvocab:1",
-                    "label": "Objekttyp"
-                },
-                {
                     "name": "customvocab:5",
                     "label": "Objekttyp (einzelne Begriffe)"
                 }
@@ -431,23 +427,6 @@
             "label": "doi"
         },
         {
-            "o:alternate_label": "URI oder URL",
-            "o:alternate_comment": null,
-            "o:is_required": false,
-            "o:is_private": false,
-            "o:default_lang": null,
-            "data_types": [
-                {
-                    "name": "uri",
-                    "label": "URI"
-                }
-            ],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
-            "vocabulary_label": "Bibliographic Ontology",
-            "local_name": "uri",
-            "label": "uri"
-        },
-        {
             "o:alternate_label": null,
             "o:alternate_comment": null,
             "o:is_required": false,
@@ -499,25 +478,21 @@
             "label": "Description"
         },
         {
-            "o:alternate_label": "Schlagwort(e)",
+            "o:alternate_label": "Digitale Repr\u00e4sentation",
             "o:alternate_comment": null,
             "o:is_required": false,
             "o:is_private": false,
             "o:default_lang": null,
             "data_types": [
                 {
-                    "name": "literal",
-                    "label": "Text"
-                },
-                {
                     "name": "uri",
                     "label": "URI"
                 }
             ],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
-            "vocabulary_label": "Dublin Core",
-            "local_name": "subject",
-            "label": "Subject"
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/ontology\/bibo\/",
+            "vocabulary_label": "Bibliographic Ontology",
+            "local_name": "uri",
+            "label": "uri"
         },
         {
             "o:alternate_label": "Signatur",
@@ -585,6 +560,27 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "license",
             "label": "License"
+        },
+        {
+            "o:alternate_label": "Schlagwort(e)",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "subject",
+            "label": "Subject"
         },
         {
             "o:alternate_label": "Externe ID des Datensatzes",

@@ -2,10 +2,22 @@
     "o:label": "Personen und K\u00f6rperschaften",
     "o:resource_template_property": [
         {
-            "o:alternate_label": null,
+            "o:alternate_label": "Objekttyp",
             "o:alternate_comment": null,
             "o:is_required": false,
-            "o:is_private": true,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "type",
+            "label": "Type"
+        },
+        {
+            "o:alternate_label": "Name",
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
             "o:default_lang": null,
             "data_types": [
                 {
@@ -221,9 +233,9 @@
         "label": "Agent"
     },
     "o:title_property": {
-        "vocabulary_namespace_uri": "http:\/\/xmlns.com\/foaf\/0.1\/",
-        "vocabulary_label": "Friend of a Friend",
-        "local_name": "name",
-        "label": "name"
+        "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+        "vocabulary_label": "Dublin Core",
+        "local_name": "title",
+        "label": "Title"
     }
 }

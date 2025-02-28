@@ -472,35 +472,6 @@
             "label": "Language"
         },
         {
-            "o:alternate_label": "Schlagwort(e)",
-            "o:alternate_comment": "inhaltliche bzw. thematische Schlagworte",
-            "o:is_required": false,
-            "o:is_private": false,
-            "o:default_lang": null,
-            "data_types": [
-                {
-                    "name": "literal",
-                    "label": "Text"
-                },
-                {
-                    "name": "uri",
-                    "label": "URI"
-                },
-                {
-                    "name": "valuesuggest:gnd:gnd",
-                    "label": "GND: Die Gemeinsame Normdatei"
-                },
-                {
-                    "name": "valuesuggest:homosaurus:homosaurus",
-                    "label": "Homosaurus: an international LGBTQ linked data vocabulary"
-                }
-            ],
-            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
-            "vocabulary_label": "Dublin Core",
-            "local_name": "subject",
-            "label": "Subject"
-        },
-        {
             "o:alternate_label": "Verweise",
             "o:alternate_comment": "Eine verwandte Ressource (au\u00dferhalb der Sammlung), auf die die beschriebene Ressource verweist, die sie zitiert oder auf die sie anderweitig verweist.",
             "o:is_required": false,
@@ -541,6 +512,35 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "license",
             "label": "License"
+        },
+        {
+            "o:alternate_label": "Schlagwort(e)",
+            "o:alternate_comment": "inhaltliche bzw. thematische Schlagworte",
+            "o:is_required": false,
+            "o:is_private": false,
+            "o:default_lang": null,
+            "data_types": [
+                {
+                    "name": "literal",
+                    "label": "Text"
+                },
+                {
+                    "name": "uri",
+                    "label": "URI"
+                },
+                {
+                    "name": "valuesuggest:gnd:gnd",
+                    "label": "GND: Die Gemeinsame Normdatei"
+                },
+                {
+                    "name": "valuesuggest:homosaurus:homosaurus",
+                    "label": "Homosaurus: an international LGBTQ linked data vocabulary"
+                }
+            ],
+            "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
+            "vocabulary_label": "Dublin Core",
+            "local_name": "subject",
+            "label": "Subject"
         },
         {
             "o:alternate_label": "Externe ID des Datensatzes",
